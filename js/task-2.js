@@ -12,15 +12,16 @@ const averageCalories = totalCalories / days.length;
 
 if (days.length === 0) {
   return 0;
-}
-
-return Math.round(averageCalories)
-
 
 }
 
+return Math.round(averageCalories);
 
-console.log(
+
+}
+
+
+console.log("Task-2:",
   calcAverageCalories([
     { day: "monday", calories: 3010 },
     { day: "tuesday", calories: 3200 },
@@ -32,7 +33,7 @@ console.log(
   ])
 ); // 3180
 
-console.log(
+console.log("Task-2:",
   calcAverageCalories([
     { day: "monday", calories: 2040 },
     { day: "tuesday", calories: 2270 },
@@ -44,6 +45,6 @@ console.log(
   ])
 ); // 2270
 
-console.log(
+console.log("Task-2:",
   calcAverageCalories([])
 ); // 0
