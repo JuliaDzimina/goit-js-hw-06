@@ -6,7 +6,11 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-console.log(
+const sortByDescendingFriendCount = (users) => {
+return users.toSorted((a, b) => b.friends.length - a.friends.length)
+}
+
+console.log("Task-3", 
   sortByDescendingFriendCount([
     {
       name: "Moore Hensley",

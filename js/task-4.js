@@ -5,6 +5,11 @@
 // другий параметр gender — рядок, що зберігає стать.
 // Функція має використовувати ланцюжок виклику методів та повертати загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
 
+const getTotalBalanceByGender = (users, gender) => {
+  const totalBalace = users.filter(user => user.gender === gender)
+  .reduce((total, user) => total + user.balance, 0)
+return totalBalace
+}
 
 const allUsers = [
     {
@@ -44,6 +49,6 @@ const allUsers = [
   }
 ];
 
-console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
+console.log("Task-4", getTotalBalanceByGender(allUsers, "male")); // 12053
 
-console.log(getTotalBalanceByGender(allUsers, "female")); // 8863
+console.log("Task-4", getTotalBalanceByGender(allUsers, "female")); // 8863
