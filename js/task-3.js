@@ -11,10 +11,10 @@
 // Візьми код нижче з ініціалізацією екземпляра й викликами методів і встав його після оголошення класу для перевірки коректності роботи. У консоль будуть виведені результати їх роботи. Будь ласка, нічого там не змінюй.
 
 const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
+console.log("Task-03:", builder.getValue()); // "."
 builder.padStart("^");
-console.log(builder.getValue()); // "^."
+console.log("Task-03:", builder.getValue()); // "^."
 builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
+console.log("Task-03:", builder.getValue()); // "^.^"
 builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+console.log("Task-03:", builder.getValue()); // "=^.^="
