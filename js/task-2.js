@@ -24,9 +24,7 @@ addItem(newItem){
 };
 
 removeItem(itemToRemove){
-    if(this.#items.includes(itemToRemove)){
-        this.#items.splice(itemToRemove, 1);
-    }
+    this.#items = this.#items.filter(item => item !== itemToRemove);
     
 }
 }
